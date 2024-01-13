@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: linear-gradient(
+    rgba(199, 89, 247, 0.7),
+    rgba(235, 182, 239, 0.7)
+  ); */
+  background-color: black;
+}
+
+.card-container {
+  width: 100%;
+  margin: 4vh auto;
+  border: 1px solid gray;
+  position: relative;
+  border-radius: 15px;
+  height: 80vh;
+  height: 80lvh;
+  background-image: url("https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.add-button {
+  font-size: 4rem;
+  padding: 0rem 1.15rem;
+  background-color: rgba(199, 89, 247, 0.7);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  z-index: 100;
+  cursor: pointer;
+  transform: 0.2s all ease-in-out;
+}
+
+.add-button:hover {
+  color: white;
+}
+
+.name {
+  font-size: 1.5rem;
+  color: blueviolet;
+  margin: 0.5rem auto;
+}
+
+.lorem,
+.albums-p {
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+.image {
+  width: 100%;
+  overflow: auto;
+}
+
+.card > .card-content {
+  background: white;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  padding: 3rem 2rem;
+  position: absolute;
+  top: 55%;
+  height: 60%;
+  border: 1px solid white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.albums-p {
+  color: blueviolet;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.album-image {
+  width: 160px;
+  box-shadow: 0 6px 10px rgba(89, 27, 223, 0.4);
+}
+
+.album-image.half {
+  width: 80px;
+}
+
+@media screen and (min-width: 670px) {
+  .album-image {
+    width: 200px;
+  }
+  .album-image.half {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 825px) {
+  .album-image {
+    width: 260px;
+  }
+  .album-image.half {
+    width: 130px;
+  }
+  .card > .card-content {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .album-image {
+    width: 300px;
+  }
+  .album-image.half {
+    width: 150px;
+  }
+  .card > .card-content {
+    padding: 9rem;
+  }
+}
+
+@media screen and (min-width: 1370px) {
+  .album-image {
+    width: 300px;
+    height: 200px;
+  }
+  .album-image.half {
+    width: 150px;
+  }
+  .card > .card-content {
+    padding: 9rem;
+  }
+  .card-container {
+    height: 70vh;
+    width: 80%;
+  }
+}
